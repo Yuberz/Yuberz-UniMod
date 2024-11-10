@@ -1,0 +1,60 @@
+
+BgObject <-
+{
+	panidata = "./bg/unistcity/gyakko.pat", 
+
+
+
+	data000 =
+	[
+		{ tag="frm", name="fuck" }, // 
+
+		{ tag="prio", val=260 },
+
+		{ tag="startpos", x=0, y=-30000 ,z=100000 }, // 
+	
+	]
+	
+	data001 =
+	[
+		{ tag="frm", name="fuck2" }, // 
+
+		{ tag="prio", val=261 },
+	
+
+		{ tag="startpos", x=0, y=-30000 ,z=99900 }, // 
+	
+	]
+
+	data002 =
+	[
+		{ tag="frm", name="fuck3" }, // 
+
+		{ tag="prio", val=259 },
+	
+
+		{ tag="startpos", x=0, y=30000 ,z=99990 }, // 
+	
+	]
+	
+	data050 =
+	[
+		{ tag="frm", name="fog", wait=1000 }, 
+		{ tag="frm", name="fog1", wait=1000 }, // 
+		{ tag="frm", name="fog2", wait=1000 }, 
+		{ tag="frm", name="fog3", wait=1000 }, 
+		
+
+
+		{ tag="prio", val=253 }, 
+
+
+		{ tag="startpos", x=0, y=1000,z=3000 }, // 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	
+
+
+
+}

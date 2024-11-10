@@ -1,0 +1,259 @@
+
+BgObject <-
+{
+	panidata = "./bg/bg01/gyakko.pat", // ややこしくなるので、できるだけ同じフォルダに入れるように
+
+	//逆光↓
+
+	data000 =
+	[
+		{ tag="frm", name="main", wait=999 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+		{ tag="prio_ex", val = 268 }, // 優先度変更フラグON時のプライオリティ
+
+		{ tag="startpos", x=-12000, y=-5000 ,z=50000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data001 =
+	[
+		{ tag="frm", name="aomaru", wait=999 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+		{ tag="prio_ex", val = 268 }, // 優先度変更フラグON時のプライオリティ
+
+		{ tag="startpos", x=-8000, y=-4500 ,z=40000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data002 =
+	[
+		{ tag="frm", name="midoten", wait=999 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+		{ tag="prio_ex", val = 268 }, // 優先度変更フラグON時のプライオリティ
+
+		{ tag="startpos", x=-6000, y=-4000 ,z=34000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data003 =
+	[
+		{ tag="frm", name="oremaru", wait=999 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+		{ tag="prio_ex", val = 268 }, // 優先度変更フラグON時のプライオリティ
+
+		{ tag="startpos", x=-3000, y=-3600 ,z=28000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data004 =
+	[
+		{ tag="frm", name="midomaru", wait=999 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+		{ tag="prio_ex", val = 268 }, // 優先度変更フラグON時のプライオリティ
+
+		{ tag="startpos", x=1100, y=-2400 ,z=22000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data005 =
+	[
+		{ tag="frm", name="midomaru2", wait=999 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+		{ tag="prio_ex", val = 268 }, // 優先度変更フラグON時のプライオリティ
+
+		{ tag="startpos", x=2000, y=-900 ,z=16000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data006 =
+	[
+		{ tag="frm", name="niziwa", wait=999 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+		{ tag="prio_ex", val = 268 }, // 優先度変更フラグON時のプライオリティ
+
+		{ tag="startpos", x=3400, y=100 ,z=10000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data007 =
+	[
+		{ tag="frm", name="pole", wait=999 }, // 
+
+		{ tag="prio", val=402 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-2310, y=-85 ,z=-300 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+	
+	data008 =
+	[
+		{ tag="frm", name="uturi", wait=20 }, // 
+		{ tag="frm", name="uturi2", wait=20 }, // 
+		{ tag="prio", val=260 }, 
+		{ tag="prio_ex", val = 268 }, 
+
+		{ tag="startpos", x=0, y=1000,z=2000 }, // 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data009 =
+	[
+		{ tag="frm", name="bush1", wait=60 }, // 
+		{ tag="frm", name="bush4", wait=60 }, 
+		{ tag="frm", name="bush2", wait=60 }, 
+		{ tag="frm", name="bush3", wait=60 }, 
+		{ tag="frm", name="bush2", wait=60 }, 
+		{ tag="frm", name="bush4", wait=60 }, 
+
+		{ tag="prio", val=250 }, 
+
+
+		{ tag="startpos", x=-2400, y=-250,z=5000 }, // 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data010 =
+	[
+		{ tag="frm", name="bush1", wait=50 }, // 
+		{ tag="frm", name="bush4", wait=40 }, 
+		{ tag="frm", name="bush2", wait=60 }, 
+		{ tag="frm", name="bush3", wait=60 }, 
+		{ tag="frm", name="bush2", wait=50 }, 
+		{ tag="frm", name="bush4", wait=60 }, 
+
+		{ tag="prio", val=250 }, 
+
+
+		{ tag="startpos", x=-2800, y=-250,z=4750 }, // 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data011 =
+	[
+		{ tag="frm", name="bush1", wait=66 }, // 
+		{ tag="frm", name="bush4", wait=53 }, 
+		{ tag="frm", name="bush2", wait=60 }, 
+		{ tag="frm", name="bush3", wait=40 }, 
+		{ tag="frm", name="bush2", wait=50 }, 
+		{ tag="frm", name="bush4", wait=60 }, 
+
+		{ tag="prio", val=250 }, 
+
+
+		{ tag="startpos", x=-3500, y=-280,z=4740 }, // 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	data012 =
+	[
+		{ tag="frm", name="bus1", wait=70 }, // 
+		{ tag="frm", name="bus2", wait=53 }, 
+		{ tag="frm", name="bus3", wait=65 }, 
+		{ tag="frm", name="bus4", wait=45 }, 
+		{ tag="frm", name="bus3", wait=65 }, 
+		{ tag="frm", name="bus2", wait=53 }, 
+
+		{ tag="prio", val=250 }, 
+
+
+		{ tag="startpos", x=-2600, y=-290,z=5200 }, // 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data013 =
+	[
+		{ tag="frm", name="bush1", wait=66 }, // 
+		{ tag="frm", name="bush4", wait=53 }, 
+		{ tag="frm", name="bush2", wait=60 }, 
+		{ tag="frm", name="bush3", wait=40 }, 
+		{ tag="frm", name="bush2", wait=50 }, 
+		{ tag="frm", name="bush4", wait=60 }, 
+
+		{ tag="prio", val=251 }, 
+
+
+		{ tag="startpos", x=-3000, y=-280,z=4490 }, // 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	data014 =
+	[
+		{ tag="frm", name="bus1", wait=50 }, // 
+		{ tag="frm", name="bus2", wait=53 }, 
+		{ tag="frm", name="bus3", wait=65 }, 
+		{ tag="frm", name="bus4", wait=68 }, 
+		{ tag="frm", name="bus3", wait=65 }, 
+		{ tag="frm", name="bus2", wait=53 }, 
+
+		{ tag="prio", val=250 }, 
+
+
+		{ tag="startpos", x=-3200, y=-290,z=4900 }, // 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data050 =
+	[
+		{ tag="frm", name="fog", wait=1000 }, 
+		{ tag="frm", name="fog1", wait=1000 }, // 
+		{ tag="frm", name="fog2", wait=1000 }, 
+		{ tag="frm", name="fog3", wait=1000 }, 
+		
+
+
+		{ tag="prio", val=253 }, 
+
+
+		{ tag="startpos", x=0, y=1000,z=3000 }, // 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	data070 =
+	[
+		{ tag="frm", name="cloud4", wait=1000 }, 
+		{ tag="frm", name="cloud3", wait=1000 }, 
+		{ tag="frm", name="cloud2", wait=1000 }, 
+		{ tag="frm", name="cloud1", wait=1000 }, 
+		
+
+
+		{ tag="prio", val=250 }, 
+
+		{ tag="startpos", x=-8000, y=-8500,z=50000 }, // 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data081 =
+	[
+		{ tag="frm", name="c0", wait=100 }, 
+		{ tag="frm", name="c1", wait=800 }, 
+		{ tag="frm", name="c2", wait=0 }, 
+
+		{ tag="prio", val=250 }, 
+
+		{ tag="startpos", x=-5000, y=-7000,z=60000 }, // 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data082 =
+	[
+		{ tag="frm", name="c2", wait=50 }, 
+		{ tag="frm", name="c0", wait=150 }, 
+		{ tag="frm", name="c1", wait=800 }, 
+
+
+		{ tag="prio", val=250 }, 
+
+		{ tag="startpos", x=-8000, y=-9000,z=70000 }, // 
+	]
+
+
+
+}

@@ -1,0 +1,1303 @@
+// 0はランダム用 数字部分がそのままBGナンバーに
+// DataFile = // BGデータフォルダ名、BGファイル名は bg.fbx 固定
+// Scale = [X,Y,Z] // モデル拡大率
+// Pos = [X,Y,Z] // モデル移動量
+// ViewGrid = // 1ならばグリッド表示
+// MSAA = // MSAAレベル 0-16 設定値が対応していない場合、カードの最大値となる。通常は2で
+// TargetW =  // レンダリングターゲット幅 基本値1280
+// TargetH =  // レンダリングターゲット高さ 基本値720
+// VanishingPoint = // 消失点位置 基本値0.0
+//
+// StageSelTex = // ステージセレクトでのグラフィック -1だとなし
+// SelectDisable =  // 選択禁止か
+// RandomDisable =  // ランダム禁止か
+// VsDisable =  // 対戦禁止か
+
+// ShadowScale  = 0.6, // UNI用・未指定時 0.6
+// ShadowAlpha = 0.7, // UNI用・未指定時 0.7
+
+// ※ 浮動小数点定数に「f」を使ってはいけない。 ×「0.0f」 ○「0.0」
+
+// DLCFlag = // DLCの所持で使用不可になるフラグ　(1<<0):クオン
+
+
+BgList <-
+{
+	// BGセレクト並び順
+	// SelectDisable なものを入れても無効
+	// 0 は書かないように
+	// 同じものを書くといっぱい出てくるので注意
+	BgSelectList = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 16, 19, 23, 21, 20, 22, 24, 30, 31, 33, 34, 32, 90], 
+
+	/////////////////////////////////////////////////////////
+	Bg_001 =
+	{
+		Name = "市街地中枢・交差点", // 全角32文字未満
+		DataFile = "bg01",
+		
+		Scale = [ 2.0, 2.0, 2.0 ],
+		Position = [ 0.0, -0.05, 0.0 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+		IsFog = 1,
+		FogStart = 0.0, FogEnd = 6000.0,
+		FogColor = [ 0.3, 0.2, 1.0, 0.1 ], // RGBA
+
+		MSAA = 0,
+		
+		StageW = 4096, // ※1.06:(2560-128)
+
+		IsBloom = 0,
+		
+		ShadowLightType = 0,
+		ShadowLightStatus = 
+		[
+			{ Type=0, Position=0.0, PowerValue=0.0, Color=[0.0,0.0,0.0,0.7] },//ステージ中央地面反射
+		],
+		ShadowReflexColor = [ 1.0, 1.0, 1.0, 0.6 ], // RGBA
+		
+		BGBloomEnable = 0,			// OFF:0 / ON:1
+		BGBloomBlightness = 1.0,	// 0 ～ 2
+		BGBloomPower = 4.00,			// 0.1 ～ 5
+		BGBloomBiassR = 1.0,		// 0 ～ 5
+		BGBloomBiassG = 1.0,		// 0 ～ 5
+		BGBloomBiassB = 1.0,		// 0 ～ 5
+		BGBloomBlurRadius = 0,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.6,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0,	// 0 ～ 1
+		BGTinyFXAALerpT = 0,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.5, // 0.7
+
+		StageSelTex = 1,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_002 =
+	{
+		Name = "高層建築・屋上", // 全角32文字未満
+		DataFile = "bg02",
+
+		Scale = [ 10.0, 10.0, 10.0 ],
+		Position = [ 0.0, 0.0, -1.5 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+
+		IsFog = 1,
+		FogStart = 2.0, FogEnd = 4000.0,
+		FogColor = [ 0.17, 0.41, 0.80, 1.0 ], // RGBA ?e?X?g?p?c?c?[0.33, 0.80, 0.77, 1.0 
+
+		MSAA = 4,
+		
+		StageW = 4096, // ※1.06:(2560-128)
+
+		IsBloom = 0,
+		
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 1.0,	// 0 ～ 2
+		BGBloomPower = 2.50,			// 0.1 ～ 5
+		BGBloomBiassR = 1.0,		// 0 ～ 5
+		BGBloomBiassG = 0.0,		// 0 ～ 5
+		BGBloomBiassB = 1.0,		// 0 ～ 5
+		BGBloomBlurRadius = 1.00,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.6,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.7, // 0.7
+
+		StageSelTex = 2,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_003 =
+	{
+		Name = "静寂の公園", // 全角32文字未満
+		DataFile = "bg03",
+
+		Scale = [ 10.0, 10.0, 10.0 ],
+		Position = [ 0.0, -0.05, 0.0 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+
+		IsFog = 1,
+		FogStart = 2.0, FogEnd = 220.0,
+		FogColor = [ 0.12, 0.15, 0.40, 1.0 ], // RGBA
+
+		MSAA = 4,
+
+		StageW = 4096, // ※1.06:(2560-128)
+		
+		IsBloom = 0,
+		
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.8,	// 0 ～ 2
+		BGBloomPower = 2.00,			// 0.1 ～ 5
+		BGBloomBiassR = 1.5,		// 0 ～ 5
+		BGBloomBiassG = 0.3,		// 0 ～ 5
+		BGBloomBiassB = 1.5,		// 0 ～ 5
+		BGBloomBlurRadius = 1.00,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.7, // 0.7
+
+		StageSelTex = 3,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_004 =
+	{
+		Name = "川沿いの広場", // 全角32文字未満
+		DataFile = "bg04",
+
+		Scale = [ 10.0, 10.0, 10.0 ],
+		Position = [ -0.4, 0.0, 2.0 ],
+		ViewGrid = 0,
+		FOV = 44.1,
+
+		IsFog = 1,
+		FogStart = 2.0, FogEnd = 4000.0,
+		FogColor = [ 0.39, 0.58, 0.92, 1.0 ], // RGBA 0.39, 0.58, 0.92, 1.0 
+
+		MSAA = 4,
+		
+		StageW = 4096, // ※1.06:(2560-128)
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.8,	// 0 ～ 2
+		BGBloomPower = 1.80,			// 0.1 ～ 5
+		BGBloomBiassR = 1.0,		// 0 ～ 5
+		BGBloomBiassG = 0.3,		// 0 ～ 5
+		BGBloomBiassB = 1.2,		// 0 ～ 5
+		BGBloomBlurRadius = 1.00,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.5, // 0.7
+
+		StageSelTex = 4,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_005 =
+	{
+		Name = "高速道路・下層部", // 全角32文字未満
+		DataFile = "bg05",
+
+		Scale = [ 10.0, 10.0, 10.0 ],
+		Position = [ 0.3, 0.0, 0.0 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+
+		IsFog = 1,
+		FogStart = 5.0, FogEnd = 1000.0,
+		FogColor = [ 0.05, 0.15, 0.15, 1.0 ], // RGBA
+
+		MSAA = 4,
+		
+		StageW = 4096, // ※1.06:(2560-128)
+
+		IsBloom = 0,
+		
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 1.0,	// 0 ～ 2
+		BGBloomPower = 2.00,			// 0.1 ～ 5
+		BGBloomBiassR = 0.8,		// 0 ～ 5
+		BGBloomBiassG = 0.2,		// 0 ～ 5
+		BGBloomBiassB = 1.3,		// 0 ～ 5
+		BGBloomBlurRadius = 1.00,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.6,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.5, // 0.7
+
+		StageSelTex = 5,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_006 =
+	{
+		Name = "琥珀色の高架下", // 全角32文字未満
+		DataFile = "bg06",
+
+		Scale = [ 10.0, 10.0, 10.0 ],
+		Position = [ 0.0, 0.0, 0.0 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+
+		IsFog = 1,
+		FogStart = 1.0, FogEnd = 130.0,
+		FogColor = [ 0.5, 0.5, 0.5, 1.0 ], // RGBA
+
+		MSAA = 4,
+		
+		StageW = 4096, // ※1.06:(2560-128)
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.7,	// 0 ～ 2
+		BGBloomPower = 2.00,			// 0.1 ～ 5
+		BGBloomBiassR = 1.0,		// 0 ～ 5
+		BGBloomBiassG = 0.3,		// 0 ～ 5
+		BGBloomBiassB = 1.3,		// 0 ～ 5
+		BGBloomBlurRadius = 0.60,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.6,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.6, // 0.7
+
+		StageSelTex = 6,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_007 =
+	{
+		Name = "明灯の商業施設", // 全角32文字未満
+        DataFile = "bg07",
+
+		Scale = [ 10.0, 10.0, 10.0 ],
+		Position = [ 0.0, 0.0, 0.0 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+
+		IsFog = 1,
+		FogStart = 1.0, FogEnd = 30.0,
+		FogColor = [ 0.1, 0.05, 0.1, 1.0 ], // RGBA 0.39, 0.58, 0.92, 1.0   1.0, 0.76, 0.66, 1.0   0.0, 0.25, 0.90, 1.0
+
+		MSAA = 4,
+		
+		StageW = 4096, // ※1.06:(2560-128)
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.9,	// 0 ～ 2
+		BGBloomPower = 2.00,			// 0.1 ～ 5
+		BGBloomBiassR = 0.7,		// 0 ～ 5
+		BGBloomBiassG = 0.0,		// 0 ～ 5
+		BGBloomBiassB = 1.6,		// 0 ～ 5
+		BGBloomBlurRadius = 1.00,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.4, // 0.7
+
+		StageSelTex = 7,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_008 =
+	{
+		Name = "守人の社", // 全角32文字未満
+		DataFile = "bg08",
+
+		Scale = [ 10.6, 10.6, 10.6 ],
+		Position = [ 0.0, 0.0, 0.0 ],
+		ViewGrid = 0,
+		FOV = 50.0,
+
+		IsFog = 1,
+		FogStart = 3.0, FogEnd = 20.0,
+		FogColor = [ 0.10, 0.10, 0.15, 1.0 ], // RGBA ?e?X?g?p?c?c?[0.80, 0.36, 0.13, 1.0
+
+		MSAA = 4,
+		
+		StageW = 4096, // ※1.06:(2560-128)
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.5,	// 0 ～ 2
+		BGBloomPower = 0.80,			// 0.1 ～ 5
+		BGBloomBiassR = 0.7,		// 0 ～ 5
+		BGBloomBiassG = 0.1,		// 0 ～ 5
+		BGBloomBiassB = 1.7,		// 0 ～ 5
+		BGBloomBlurRadius = 1.20,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.7, // 0.7
+
+		StageSelTex = 8,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_009 =
+	{
+		Name = "煌朧の祭壇", // 全角32文字未満
+		DataFile = "bg09",
+		
+		// 旧ステージは基本的に使わない
+		// SelectDisable =  1, // 選択禁止か
+		// RandomDisable =  1, // ランダム禁止か
+		VsDisable = 1, // 対戦禁止か
+
+		Scale = [ 10.0, 10.0, 10.0 ],
+		Position = [ 0.0, 0.0, 0.0 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+
+		IsFog = 1,
+		FogStart = -50.0, FogEnd = 1000.0,
+		FogColor = [ -4.0, 0.0, 1.0, 1.0 ], // RGBA テスト用からー0.33, 0.80, 0.77, 1.0 
+
+		MSAA = 4,
+		
+		StageW = 4096, // ※1.06:(2560-128)
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 1.0,	// 0 ～ 2
+		BGBloomPower = 2.50,			// 0.1 ～ 5
+		BGBloomBiassR = 0.5,		// 0 ～ 5
+		BGBloomBiassG = 1.5,		// 0 ～ 5
+		BGBloomBiassB = 1.5,		// 0 ～ 5
+		BGBloomBlurRadius = 1.10,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.4,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.7, // 0.7
+
+		StageSelTex = 9,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_010 =
+	{
+		Name = "紅く染まる駐車場", // 全角32文字未満
+		DataFile = "bg10",
+
+		Scale = [ 10.0, 10.0, 10.0 ],
+		Position = [ 0.0, 0.0, 0.5 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+
+		IsFog = 1,
+		FogStart = -50.0, FogEnd = 500.0,
+		FogColor = [ 0.12, 0.03, 0.05, 1.0 ], // RGBA テスト用からー0.33, 0.80, 0.77, 1.0 
+
+		MSAA = 4,
+		
+		StageW = 4096, // ※1.06:(2560-128)
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.8,	// 0 ～ 2
+		BGBloomPower = 1.80,			// 0.1 ～ 5
+		BGBloomBiassR = 0.0,		// 0 ～ 5
+		BGBloomBiassG = 2.0,		// 0 ～ 5
+		BGBloomBiassB = 2.0,		// 0 ～ 5
+		BGBloomBlurRadius = 1.10,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.6, // 0.7
+
+		StageSelTex = 10,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_011 =
+	{
+		Name = "朽ち荒れた廃墟", // 全角32文字未満
+		DataFile = "bg11",
+
+		Scale = [ 20.0, 20.0, 20.0 ],
+		Position = [ 0.0, 0.0, 3.5 ],
+		ViewGrid = 0,
+		FOV = 60.0,
+
+		IsFog = 1,
+		FogStart = -6.0, FogEnd = 25.0,
+		FogColor = [ 0.25, 0.1, 0.0, 1.0 ], // RGBA
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.8,	// 0 ～ 2
+		BGBloomPower = 2.60,			// 0.1 ～ 5
+		BGBloomBiassR = 1.0,		// 0 ～ 5
+		BGBloomBiassG = 0.0,		// 0 ～ 5
+		BGBloomBiassB = 3.0,		// 0 ～ 5
+		BGBloomBlurRadius = 1.10,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.6,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.5, // 0.7
+
+		StageSelTex = 11,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_012 =
+	{
+		Name = "鳴動の工業施設", // 全角32文字未満
+		DataFile = "bg12",
+
+		Scale = [ 20.0, 20.0, 20.0 ],
+		Position = [ 0.0, 0.0, 3.6 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+
+		IsFog = 1,
+		FogStart = -15.0, FogEnd = 800.0,
+		FogColor = [ -1.0, -1.0, 2.0, 1.0 ], // RGBA
+		VanishingPoint = 0.3
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.8,	// 0 ～ 2
+		BGBloomPower = 2.0,			// 0.1 ～ 5
+		BGBloomBiassR = 0.5,		// 0 ～ 5
+		BGBloomBiassG = 0.5,		// 0 ～ 5
+		BGBloomBiassB = 3.0,		// 0 ～ 5
+		BGBloomBlurRadius = 1.10,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.55,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.5, // 0.7
+		
+		StageSelTex = 12,
+	}
+
+	/////////////////////////////////////////////////////////
+	Bg_013 =
+	{
+		Name = "眠りの噴水広場", // 全角32文字未満
+		DataFile = "bg13",
+
+		Scale = [ 20.0, 20.0, 20.0 ],
+		Position = [ 0.0, 0.0, 4 ],
+		ViewGrid = 0,
+		FOV = 40.0,
+
+		IsFog = 1,
+		FogStart = 1.0, FogEnd = 500.0,
+		FogColor = [ 1.0, 1.0, 1.0, 1.0 ], // RGBA ?e?X?g?p?c?c?[0.80, 0.36, 0.13, 1.0
+
+		MSAA = 4,
+		
+		StageW = 4096, // ※1.06:(2560-128)
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.8,	// 0 ～ 2
+		BGBloomPower = 2.50,			// 0.1 ～ 5
+		BGBloomBiassR = 1.8,		// 0 ～ 5
+		BGBloomBiassG = 0.6,		// 0 ～ 5
+		BGBloomBiassB = 2.5,		// 0 ～ 5
+		BGBloomBlurRadius = 1.10,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+
+		IsBloom = 0,
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.6, // 0.7
+
+		StageSelTex = 13,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_014 =
+	{
+		Name = "桜咲き散る旧校舎", // 全角32文字未満
+		DataFile = "bg14",
+
+		Scale = [ 21.0, 21.0, 21.0 ],
+		Position = [ 0.0, 0.0, 3.6 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+
+		IsFog = 1,
+		FogStart = -10.0, FogEnd = 800.0,
+		FogColor = [ 1.0, -6.0, -4.0, 1.0 ], // RGBA
+		VanishingPoint = 0.3
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+		
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.6,	// 0 ～ 2
+		BGBloomPower = 2.60,			// 0.1 ～ 5
+		BGBloomBiassR = 0.8,		// 0 ～ 5
+		BGBloomBiassG = 0.8,		// 0 ～ 5
+		BGBloomBiassB = 3.5,		// 0 ～ 5
+		BGBloomBlurRadius = 1.20,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.7, // 0.7
+
+		StageSelTex = 14,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_015 =
+	{
+		Name = "電影のカフェテリア", // 全角32文字未満
+		DataFile = "bg15",
+
+		Scale = [ 0.6, 0.6, 0.6 ],
+		Position = [ -0.5, 0.0,-2.5 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+
+		IsFog = 1,
+		FogStart = 2.0, FogEnd = 1000.0,
+		FogColor = [ 0.5, -2.0, 2.0, 1.0 ], // RGBA テスト用からー0.33, 0.80, 0.77, 1.0 
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.6,	// 0 ～ 2
+		BGBloomPower = 2.30,			// 0.1 ～ 5
+		BGBloomBiassR = 2.5,		// 0 ～ 5
+		BGBloomBiassG = 2.0,		// 0 ～ 5
+		BGBloomBiassB = 2.0,		// 0 ～ 5
+		BGBloomBlurRadius = 1.20,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.5, // 0.7
+
+		StageSelTex = 15,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_016 =
+	{
+		Name = "もみじ横町前通り", // 全角32文字未満
+		DataFile = "bg16",
+
+		Scale = [ 0.6, 0.6, 0.6 ],
+		Position = [ 1.5, 0.0,-3.0 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+		VanishingPoint = 0.35
+
+		IsFog = 1,
+		FogStart = -10.0, FogEnd = 1000.0,
+		FogColor = [ 0.17, -1.0, 0.80, 1.0 ], // RGBA テスト用からー0.33, 0.80, 0.77, 1.0 
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+		
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.7,	// 0 ～ 2
+		BGBloomPower = 1.60,			// 0.1 ～ 5
+		BGBloomBiassR = 0.3,		// 0 ～ 5
+		BGBloomBiassG = 1.5,		// 0 ～ 5
+		BGBloomBiassB = 2.0,		// 0 ～ 5
+		BGBloomBlurRadius = 1.20,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.4,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.7, // 0.7
+
+		StageSelTex = 16,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_017 =
+	{
+		Name = "環堺東・児童遊園", // 全角32文字未満
+		DataFile = "bg17",
+
+		Scale = [ 1.0, 1.0, 1.0 ],
+		Position = [ 0.0, 0.0, 1.0 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+		VanishingPoint = 0.2
+
+		IsFog = 1,
+		FogStart = -8.0, FogEnd = 160.0,
+		FogColor = [ -1.0, -1.0, 0.2, 1.0 ], // RGBA
+
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.8,	// 0 ～ 2
+		BGBloomPower = 2.70,			// 0.1 ～ 5
+		BGBloomBiassR = 1.5,		// 0 ～ 5
+		BGBloomBiassG = 1.0,		// 0 ～ 5
+		BGBloomBiassB = 1.5,		// 0 ～ 5
+		BGBloomBlurRadius = 1.00,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.6, // 0.7
+
+		StageSelTex = 17,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_018 =
+	{
+		Name = "極東の大聖堂", // 全角32文字未満
+		DataFile = "bg18",
+
+		Scale = [ 1.5, 1.5, 1.5 ],
+		Position = [ 0.0, 0.0, 0.0 ],
+		ViewGrid = 0,
+		FOV = 48.0,
+		VanishingPoint = 0.2
+
+		IsFog = 1,
+		FogStart = 0.0, FogEnd = 90.0,
+		FogColor = [ -0.2, -0.3, 0.2, 1.0 ], // RGBA
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.9,	// 0 ～ 2
+		BGBloomPower = 2.30,			// 0.1 ～ 5
+		BGBloomBiassR = 1.0,		// 0 ～ 5
+		BGBloomBiassG = 1.0,		// 0 ～ 5
+		BGBloomBiassB = 1.2,		// 0 ～ 5
+		BGBloomBlurRadius = 1.20,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.4,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.6, // 0.7
+
+		StageSelTex = 18,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_019 =
+	{
+		Name = "光と水のアートミュージアム", // 全角32文字未満
+		DataFile = "bg19",
+
+		Scale = [ 1.0, 1.0, 1.0 ],
+		Position = [ 0.0, 0.0, 0.0 ],
+		ViewGrid = 0,
+		FOV = 34.0,
+		VanishingPoint = 0.2
+
+		IsFog = 1,
+		FogStart = -130.0, FogEnd = 1600.0,
+		FogColor = [ 0.2, -0.3, 0.2, 1.0 ], // RGBA
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.5,	// 0 ～ 2
+		BGBloomPower = 2.00,			// 0.1 ～ 5
+		BGBloomBiassR = 0.5,		// 0 ～ 5
+		BGBloomBiassG = 1.5,		// 0 ～ 5
+		BGBloomBiassB = 0.5,		// 0 ～ 5
+		BGBloomBlurRadius = 0.50,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.6, // 0.7
+
+		StageSelTex = 19,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_020 =
+	{
+		Name = "カグヤステージ", // 全角32文字未満
+		DataFile = "bg20",
+
+		Scale = [ 1.0, 1.0, 1.0 ],
+		Position = [ 0.0, 0.0, -1.0 ],
+		ViewGrid = 0,
+		FOV = 48.0,
+		VanishingPoint = 0.2
+
+		IsFog = 1,
+		FogStart = 0.0, FogEnd = 1000.0,
+		FogColor = [ 1.0, -0.5, 0.2, 1.0 ], // RGBA テスト用からー0.33, 0.80, 0.77, 1.0 
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.6,	// 0 ～ 2
+		BGBloomPower = 2.00,			// 0.1 ～ 5
+		BGBloomBiassR = 2.3,		// 0 ～ 5
+		BGBloomBiassG = 1.5,		// 0 ～ 5
+		BGBloomBiassB = 0.6,		// 0 ～ 5
+		BGBloomBlurRadius = 1.20,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.4,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.4, // 0.7
+
+		StageSelTex = 20,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_021 =
+	{
+		Name = "ツルギステージ", // 全角32文字未満
+		DataFile = "bg21",
+
+		Scale = [ 0.5, 0.5, 0.5 ],
+		Position = [ 0.0, 0.0, 4.0 ],
+		ViewGrid = 0,
+		FOV = 42.0,
+		VanishingPoint = 0.38
+
+		IsFog = 1,
+		FogStart = -100.0, FogEnd = 1000.0,
+		FogColor = [ 0.0, 0.0, 0.0, 0.0 ], // RGBA
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+		
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.7,	// 0 ～ 2
+		BGBloomPower = 2.50,			// 0.1 ～ 5
+		BGBloomBiassR = 1.4,		// 0 ～ 5
+		BGBloomBiassG = 1.4,		// 0 ～ 5
+		BGBloomBiassB = 1.4,		// 0 ～ 5
+		BGBloomBlurRadius = 1.20,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.7, // 0.7
+
+		StageSelTex = 21,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_022 =
+	{
+		Name = "クオンステージ", // 全角32文字未満
+		DataFile = "bg22",
+
+		Scale = [ 1.0, 1.0, 1.0 ],
+		Position = [ 0.0, 0.0, 0.0 ],
+		ViewGrid = 0,
+		FOV = 42.0,
+		VanishingPoint = 0.25
+
+		IsFog = 1,
+		FogStart = -3.0, FogEnd = 2000.0,
+		FogColor = [ 0.2, 0.0, 0.0, 1.0 ], // RGBA
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+		
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.4,	// 0 ～ 2
+		BGBloomPower = 2.20,			// 0.1 ～ 5
+		BGBloomBiassR = 2.4,		// 0 ～ 5
+		BGBloomBiassG = 0.5,		// 0 ～ 5
+		BGBloomBiassB = 0.9,		// 0 ～ 5
+		BGBloomBlurRadius = 1.20,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.4,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.5, // 0.7
+
+		StageSelTex = 22,
+		DLCFlag=1<<0,
+	}
+	/////////////////////////////////////////////////////////
+	Bg_023 =
+	{
+		Name = "新ヒルダステージ", // 全角32文字未満
+		DataFile = "bg23",
+
+		Scale = [ 1.0, 1.0, 1.0 ],
+		Position = [ -0.5, 0.0, 0.0 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+		VanishingPoint = 0.0
+
+		IsFog = 1,
+		FogStart = 20.0, FogEnd = 500.0,
+		FogColor = [ 0.4, -0.7, -0.2, 1.0 ], // RGBA
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+		
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.6,	// 0 ～ 2
+		BGBloomPower = 3.50,			// 0.1 ～ 5
+		BGBloomBiassR = 2.0,		// 0 ～ 5
+		BGBloomBiassG = 2.0,		// 0 ～ 5
+		BGBloomBiassB = 0.0,		// 0 ～ 5
+		BGBloomBlurRadius = 1.10,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.4,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.7, // 0.7
+
+		StageSelTex = 23,
+	}
+	//////////////////////////////////////////////////////
+Bg_024 =
+	{
+		Name = "ウヅキステージ", // 全角32文字未満
+		DataFile = "bg24",
+
+		Scale = [ 0.06, 0.06, 0.06 ],
+		Position = [ 0.0, 0.0, -0.6 ],
+		ViewGrid = 0,
+		FOV = 50.0,
+		VanishingPoint = 0.3
+
+		IsFog = 1,
+		FogStart = 0.0, FogEnd = 400.0,
+		FogColor = [ 0.2, 0.5, 0.2, 1.0 ],
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 1.6,	// 0 ～ 2
+		BGBloomPower = 2.00,			// 0.1 ～ 5
+		BGBloomBiassR = 0.7,		// 0 ～ 5
+		BGBloomBiassG = 1.0,		// 0 ～ 5
+		BGBloomBiassB = 1.0,		// 0 ～ 5
+		BGBloomBlurRadius = 0.1,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.3,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.7, // 0.7
+
+		StageSelTex = 24,
+		
+	}
+	
+	/////////////////////////////////////// Custom stage
+	
+	Bg_030 =
+	{
+		Name = "portbreeze", // Port Breeze Archipelago  
+		DataFile = "bg30",
+
+		Scale = [ 1.0, 1.0, 1.0 ],
+		Position = [ 0.0, 0.0, 1.0 ],
+		ViewGrid = 0,
+		FOV = 47.0,
+		VanishingPoint = 0.2
+
+		IsFog = 0,
+		FogStart = -8.0, FogEnd = 160.0,
+		FogColor = [ -1.0, -1.0, 0.2, 1.0 ], // RGBA
+
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+
+		BGBloomEnable = 0,			// OFF:0 / ON:1
+
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.6, // 0.7
+
+		StageSelTex = 17,
+	}
+	
+	Bg_031 =
+	{
+		Name = "Altar", // 全角32文字未満
+		DataFile = "blazbluealtar",
+
+		// RandomDisable = 1, // ランダム禁止か
+		// VsDisable = 1, // 対戦禁止か
+		Scale = [ 11.0, 11.0, 6.0 ],
+		Position = [ -20.0, 0.0, -50.0 ],
+		ViewGrid = 0,
+		FOV = 20.0,
+		ViewRotationX = -2.0
+		ViewTranslationY = -75.0
+		VanishingPoint = 0.2
+
+		IsFog = 1,
+		FogStart = 0.0, FogEnd = 6000.0,
+		FogColor = [ 1.0, 1.0, 1.0, 0.0 ], // RGBA テスト用からー0.33, 0.80, 0.77, 1.0 
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+		
+		ShadowScale  = 4.0, // 0.6
+		
+		ShadowLightType = 0,
+		ShadowLightStatus = 
+		[
+			{ Type=0, Position=0.0, PowerValue=15.0, Color=[0.0,0.0,0.3,0.55] },//ステージ中央地面反射
+		],
+		ShadowReflexColor = [ 1.0, 1.0, 1.0, 0.75 ], // RGBA
+		IsBloom = 0,
+
+		
+
+		MSAA = 2,
+		StageW = 4096, // 2560,4096
+
+		StageSelTex = 20,
+	}
+	
+
+	Bg_032 =
+	{
+		Name = "csel",
+		DataFile = "uni2csel",
+
+		RandomDisable = 1, // ランダム禁止か
+		// VsDisable = 1, // 対戦禁止か
+		Scale = [ 11.0, 11.0, 6.0 ],
+		Position = [ -20.0, 0.0, -50.0 ],
+		ViewGrid = 0,
+		FOV = 20.0,
+		ViewRotationX = -2.0
+		ViewTranslationY = -75.0
+		VanishingPoint = 0.2
+
+		IsFog = 1,
+		FogStart = 0.0, FogEnd = 6000.0,
+		FogColor = [ 1.0, 1.0, 1.0, 0.0 ], // RGBA テスト用からー0.33, 0.80, 0.77, 1.0 
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+		
+		ShadowScale  = 0.0, // 0.6
+		
+		ShadowLightType = 0,
+		ShadowLightStatus = 
+		[
+			{ Type=0, Position=0.0, PowerValue=15.0, Color=[0.0,0.0,0.3,0.55] },//ステージ中央地面反射
+		],
+		ShadowReflexColor = [ 1.0, 1.0, 1.0, 0.75 ], // RGBA
+		IsBloom = 0,
+
+		
+
+		MSAA = 2,
+		StageW = 1024, // 2560,4096
+
+		StageSelTex = 16,
+	}
+	
+	Bg_033 =
+	{
+		Name = "Unlit Skyscraper", 
+		DataFile = "unistcity"
+
+
+		Scale = [ 900.0, 1090.0, 1600.0 ],
+		Position = [ 22, 0.0, -850 ],
+		ViewGrid = 0,
+		FOV = 60.0,
+		VanishingPoint = 0.2
+
+		IsFog = 1,
+		FogStart = -10.0, FogEnd = 1000.0,
+		FogColor = [ 1, 1, 1, 0.0 ], // RGBA
+
+		MSAA = 2,
+		StageW = 4096, // 2560,4096
+
+		IsBloom = 0,
+		
+		StageSelTex = 21,
+
+		ShadowLightType = 0,
+		ShadowLightStatus = 
+		[
+			{ Type=0, Position=0.0, PowerValue=15.0, Color=[1.0,1.0,1.0,0.7] },//ステージ中央地面反射
+		],
+		ShadowReflexColor = [ 1.0, 1.0, 1.0, 0.90 ], // RGBA
+		
+		BGBloomEnable = 0,			// OFF:0 / ON:1
+		BGBloomBlightness = 1.0,	// 0 ～ 2
+		BGBloomPower = 4.00,			// 0.1 ～ 5
+		BGBloomBiassR = 1.0,		// 0 ～ 5
+		BGBloomBiassG = 1.0,		// 0 ～ 5
+		BGBloomBiassB = 1.0,		// 0 ～ 5
+		BGBloomBlurRadius = 0,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.6,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0,	// 0 ～ 1
+		BGTinyFXAALerpT = 0,		// 0 ～ 1
+		
+		ShadowScale  = 0.0, // 0.6
+
+		
+
+
+	}
+	
+	
+	
+	Bg_034 =
+	{
+		Name = "屋上ステージ（仮称）", // 全角32文字未満
+		DataFile = "sethtest",
+
+		RandomDisable = 1, // ランダム禁止か
+		// VsDisable = 1, // 対戦禁止か
+		Scale = [ 0.2, 0.3, 0.1 ],
+		Position = [ 0.0, 0.0, 0.0 ],
+		ViewGrid = 0,
+		FOV = 40.0,
+		//ViewRotationX = 2.5
+		//ViewTranslationY = 0.3
+		VanishingPoint = 0.2
+
+		IsFog = 0,
+		FogStart = 2.0, FogEnd = 5000.0,
+		FogColor = [ 0.2, 0.11, 0.25, 1.0 ], // RGBA
+
+		MSAA = 2,
+		StageW = 4096, // 2560,4096
+		
+		ShadowLightType = 0,
+		ShadowLightStatus = 
+		[
+			{ Type=0, Position=0.0, PowerValue=0.0, Color=[0.0,0.0,0.0,0.45] },//ステージ中央地面反射
+		],
+		ShadowReflexColor = [ 1.0, 1.0, 1.0, 0.6 ], // RGBA
+
+		IsBloom = 0,
+		
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.5,	// 0 ～ 2
+		BGBloomPower = 2.50,			// 0.1 ～ 5
+		BGBloomBiassR = 0.0,		// 0 ～ 5
+		BGBloomBiassG = 2.5,		// 0 ～ 5
+		BGBloomBiassB = 3.0,		// 0 ～ 5
+		BGBloomBlurRadius = 0.0,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.5,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+
+
+		// キャラに乗せるグラデカラー
+		BgCharaYBaseColor   = [  0,   0,   0, 255],	// 足元
+		BgCharaYHeightColor = [255, 255, 255, 255],	// 頭先
+		
+		// DLCFlag=1<<3,
+
+		StageSelTex = 18,
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/////////////////////////////////////////////////////////
+	Bg_090 =
+	{
+		Name = "トレーニングステージ", // 全角32文字未満
+		DataFile = "bg90",
+
+		RandomDisable = 1, // ランダム禁止か
+		// VsDisable = 1, // 対戦禁止か
+		Scale = [ 10.0, 10.0, 10.0 ],
+		Position = [ 0.0, 0.0, 0.0 ],
+		ViewGrid = 0,
+		FOV = 30.0,
+
+		IsFog = 1,
+		FogStart = 0.0, FogEnd = 1000.0,
+		FogColor = [ 0.17, 0.41, 0.80, 1.0 ], // RGBA テスト用からー0.33, 0.80, 0.77, 1.0 
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+
+		LightType = 1,
+		LightColor = [ 0.38, 0.90, 0.86, 1.0 ], // 
+		
+		IsBloom = 0,
+		
+		ShadowLightType = 0,
+		ShadowLightStatus = 
+		[
+			{ Type=0, Position=0.0, PowerValue=0.0, Color=[0.0,0.0,0.0,0.7] },//ステージ中央地面反射
+		],
+		ShadowReflexColor = [ 1.0, 1.0, 1.0, 0.8 ], // RGBA
+		
+		BGBloomEnable = 0,			// OFF:0 / ON:1
+		BGBloomBlightness = 1.0,	// 0 ～ 2
+		BGBloomPower = 4.00,			// 0.1 ～ 5
+		BGBloomBiassR = 1.0,		// 0 ～ 5
+		BGBloomBiassG = 1.0,		// 0 ～ 5
+		BGBloomBiassB = 1.0,		// 0 ～ 5
+		BGBloomBlurRadius = 0,	// 0 ～ 10
+		BGBloomTextureSize = 256,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 0.6,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0,	// 0 ～ 1
+		BGTinyFXAALerpT = 0,		// 0 ～ 1
+		
+		ShadowScale  = 0.6, // 0.6
+		ShadowAlpha = 0.5, // 0.7
+
+		StageSelTex = 0,
+	}
+	
+		/////////////////////////////////////////////////////////
+
+
+	/////////////////////////////////////////////////////////
+	Bg_099 =
+	{
+		Name = "デバッグステージ", // 全角32文字未満
+		DataFile = "",
+		
+		SelectDisable = 1, // 選択禁止か
+		RandomDisable = 1, // ランダム禁止か
+		VsDisable = 1, // 対戦禁止か
+
+		ViewGrid = 1,
+		FOV = 47.0,
+		VanishingPoint = 0.35, //
+
+		StageW = 4096, // 2560 1280*3,
+		MSAA = 16,
+		
+		StageSelTex = 16,
+	}
+}
+
+
+

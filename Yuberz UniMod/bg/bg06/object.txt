@@ -1,0 +1,527 @@
+
+BgObject <-
+{
+	panidata = "./bg/bg06/epic.pat", 
+
+	data080 =
+	[
+		{ tag="frm", name="gradB", wait=1500 },
+
+		{ tag="prio", val=402 },
+
+		{ tag="startpos", x=0, y=-120 ,z=0 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+
+
+
+
+	data082 =
+	[
+		{ tag="frm", name="rain10", wait=10 },
+		{ tag="frm", name="rain11", wait=0 },
+
+
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=0, y=-200 ,z=0 }, 
+		{ tag="startdelay", val=1 }, 
+	]
+
+	data079 =
+	[
+		{ tag="frm", name="rain1", wait=10 },
+		{ tag="frm", name="rain2", wait=0 },
+
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-1000, y=-200 ,z=0 }, 
+		{ tag="startdelay", val=6 }, 
+	]
+
+	data078 =
+	[
+		{ tag="frm", name="rain10", wait=10 },
+		{ tag="frm", name="rain11", wait=0 },
+
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-2000, y=-200 ,z=100 }, 
+		{ tag="startdelay", val=3 }, 
+	]
+
+	data077 =
+	[
+		{ tag="frm", name="rain1", wait=10 },
+		{ tag="frm", name="rain2", wait=0 },
+
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-500, y=-200 ,z=1400 }, 
+		{ tag="startdelay", val=2 }, 
+	]
+
+
+	data010 =
+	[
+		{ tag="frm", name="rain1", wait=10 },
+		{ tag="frm", name="rain2", wait=0 },
+
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=1000, y=-200 ,z=600 }, 
+		{ tag="startdelay", val=5 }, 
+	]
+
+	data011 =
+	[
+		{ tag="frm", name="rain10", wait=10 },
+		{ tag="frm", name="rain11", wait=0 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=200, y=-200 ,z=100 }, 
+		{ tag="startdelay", val=5 }, 
+	]
+	
+	data012 =
+	[
+		{ tag="frm", name="rain1", wait=10 },
+		{ tag="frm", name="rain2", wait=0 },
+
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=600, y=-200 ,z=100 }, 
+		{ tag="startdelay", val=5 }, 
+	]
+
+	data013 =
+	[
+		{ tag="frm", name="rain1", wait=10 },
+		{ tag="frm", name="rain2", wait=0 },
+	
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=1700, y=-200 ,z=100 }, 
+		{ tag="startdelay", val=5 }, 
+	]
+
+
+	data040 =
+	[
+		{ tag="frm", name="rain1", wait=10 },
+		{ tag="frm", name="rain2", wait=0 },
+
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=1780, y=-200 ,z=400 }, 
+		{ tag="startdelay", val=6 }, 
+	]
+	data041 =
+	[
+		{ tag="frm", name="rain11", wait=6 },
+		{ tag="frm", name="rain10", wait=0 },
+
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=2280, y=-200 ,z=400 }, 
+		{ tag="startdelay", val=1 }, 
+	]
+
+
+	data043 =
+	[
+		{ tag="frm", name="rain10", wait=10 },
+		{ tag="frm", name="rain11", wait=0 },
+
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-2780, y=-200 ,z=400 }, 
+		{ tag="startdelay", val=2 }, 
+	]
+
+	data044 =
+	[
+		{ tag="frm", name="rain11", wait=6 },
+		{ tag="frm", name="rain10", wait=0 },
+
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-2580, y=-200 ,z=400 }, 
+		{ tag="startdelay", val=1 }, 
+	]
+
+
+	data042 =
+	[
+		{ tag="frm", name="rain10", wait=10 },
+		{ tag="frm", name="rain11", wait=0 },
+
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=2480, y=-200 ,z=400 }, 
+		{ tag="startdelay", val=2 }, 
+	]
+
+
+	data014 =
+	[
+		{ tag="frm", name="pad1", wait=10 },
+		{ tag="frm", name="pad2", wait=10 },
+		{ tag="frm", name="pad3", wait=0 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=0, y=-0 ,z=0 }, 
+		{ tag="startdelay", val=5 }, 
+	]
+
+
+	data015 =
+	[
+		{ tag="frm", name="pad1", wait=10 },
+		{ tag="frm", name="pad2", wait=10 },
+		{ tag="frm", name="pad3", wait=5 },
+		{ tag="frm", name="pad3", wait=0 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-500, y=-0 ,z=300 }, 
+		{ tag="startdelay", val=2 }, 
+	]
+
+	data016 =
+	[
+		{ tag="frm", name="pad6", wait=2 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-300, y=-0 ,z=100 }, 
+		{ tag="startdelay", val=13 }, 
+	]
+
+	data017 =
+	[
+		{ tag="frm", name="pad6", wait=2 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-400, y=-0 ,z=300 }, 
+		{ tag="startdelay", val=3 }, 
+	]
+
+	data018 =
+	[
+		{ tag="frm", name="pad6", wait=2 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-800, y=-0 ,z=0 }, 
+		{ tag="startdelay", val=3 }, 
+	]
+
+
+	data023 =
+	[
+		{ tag="frm", name="pad1", wait=10 },
+		{ tag="frm", name="pad2", wait=10 },
+		{ tag="frm", name="pad3", wait=5 },
+		{ tag="frm", name="pad3", wait=0 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-800, y=-0 ,z=300 }, 
+		{ tag="startdelay", val=2 }, 
+	]
+
+	data022 =
+	[
+		{ tag="frm", name="pad6", wait=6 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-900, y=-0 ,z=100 }, 
+		{ tag="startdelay", val=13 }, 
+	]
+
+	data021 =
+	[
+		{ tag="frm", name="pad6", wait=3 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-1000, y=-0 ,z=300 }, 
+		{ tag="startdelay", val=3 }, 
+	]
+
+	data020 =
+	[
+		{ tag="frm", name="pad6", wait=15 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-1200, y=-0 ,z=0 }, 
+		{ tag="startdelay", val=2 }, 
+	]
+
+	data026 =
+	[
+		{ tag="frm", name="pad6", wait=4 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-1300, y=-0 ,z=300 }, 
+		{ tag="startdelay", val=2 }, 
+	]
+
+	data028 =
+	[
+		{ tag="frm", name="pad6", wait=6 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-1500, y=-0 ,z=0 }, 
+		{ tag="startdelay", val=6 }, 
+	]
+
+	data030 =
+	[
+		{ tag="frm", name="pad6", wait=3 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=1000, y=-0 ,z=300 }, 
+		{ tag="startdelay", val=3 }, 
+	]
+
+	data031 =
+	[
+		{ tag="frm", name="pad6", wait=15 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=1200, y=-0 ,z=0 }, 
+		{ tag="startdelay", val=2 }, 
+	]
+
+	data032 =
+	[
+		{ tag="frm", name="pad6", wait=4 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=600, y=-0 ,z=300 }, 
+		{ tag="startdelay", val=2 }, 
+	]
+
+	data032 =
+	[
+		{ tag="frm", name="pad6", wait=4 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-400, y=-0 ,z=1000 }, 
+		{ tag="startdelay", val=2 }, 
+	]
+
+	data033 =
+	[
+		{ tag="frm", name="pad6", wait=6 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=800, y=-0 ,z=0 }, 
+		{ tag="startdelay", val=6 }, 
+	]
+
+	data034 =
+	[
+		{ tag="frm", name="pad1", wait=10 },
+		{ tag="frm", name="pad2", wait=10 },
+		{ tag="frm", name="pad3", wait=0 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=1600, y=-0 ,z=0 }, 
+		{ tag="startdelay", val=5 }, 
+	]
+
+	data035 =
+	[
+		{ tag="frm", name="r0", wait=11 },
+		{ tag="frm", name="r1", wait=0 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=0, y=-0 ,z=3000 }, 
+		{ tag="startdelay", val=5 }, 
+	]
+
+	data037 =
+	[
+		{ tag="frm", name="r0", wait=7 },
+		{ tag="frm", name="r1", wait=0 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-1500, y=-0 ,z=2000 }, 
+		{ tag="startdelay", val=5 }, 
+	]
+
+	data038 =
+	[
+		{ tag="frm", name="r0", wait=7 },
+		{ tag="frm", name="r1", wait=0 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=1500, y=-0 ,z=2000 }, 
+		{ tag="startdelay", val=5 }, 
+	]
+
+	data036 =
+	[
+		{ tag="frm", name="pad1", wait=7 },
+		{ tag="frm", name="pad2", wait=0 },
+		{ tag="frm", name="pad3", wait=5 },
+		{ tag="frm", name="pad2", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-1500, y=100 ,z=0 }, 
+		{ tag="startdelay", val=2 }, 
+	]
+
+
+	data037 =
+	[
+		{ tag="frm", name="pad6", wait=6 },
+		{ tag="frm", name="pad6", wait=0 },
+		{ tag="frm", name="pad4", wait=10 },
+		{ tag="frm", name="pad5", wait=10 },
+
+		{ tag="prio", val=300 },
+
+		{ tag="startpos", x=-2000, y=100 ,z=1000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	data090 =
+	[
+		{ tag="frm", name="grad00", wait=150 }, // 
+		{ tag="frm", name="grad01", wait=150 }, // 
+		{ tag="frm", name="grad02", wait=150 }, // 
+
+		{ tag="prio", val=402 }, //  v   C I   e B   0   O700   炢
+
+		{ tag="startpos", x=0, y=-100 ,z=0 }, // 
+		{ tag="startdelay", val=0 }, //  J n   ̑҂  t   [  
+	]
+
+	data091 =
+	[
+		{ tag="frm", name="grad01", wait=150 }, // 
+		{ tag="frm", name="grad02", wait=150 }, // 
+		{ tag="frm", name="grad00", wait=150 }, // 
+
+		{ tag="prio", val=270 }, //  v   C I   e B   0   O700   炢
+
+		{ tag="startpos", x=300, y=0 ,z=2000 }, // 
+		{ tag="startdelay", val=0 }, //  J n   ̑҂  t   [  
+	]
+
+	data092 =
+	[
+		{ tag="frm", name="grad02", wait=150 }, // 
+		{ tag="frm", name="grad00", wait=150 }, // 
+		{ tag="frm", name="grad01", wait=150 }, // 
+
+		{ tag="prio", val=269 }, //  v   C I   e B   0   O700   炢
+
+		{ tag="startpos", x=-300, y=0 ,z=4000 }, // 
+		{ tag="startdelay", val=0 }, //  J n   ̑҂  t   [  
+	]
+
+	//   ̌  i  ʉ  j  
+
+	data093 =
+	[
+		{ tag="frm", name="grad00b", wait=150 }, // 
+		{ tag="frm", name="grad01b", wait=150 }, // 
+		{ tag="frm", name="grad02b", wait=150 }, // 
+
+		{ tag="prio", val=260 }, //  v   C I   e B   0   O700   炢
+
+		{ tag="startpos", x=0, y=200 ,z=9600 }, // 
+		{ tag="startdelay", val=0 }, //  J n   ̑҂  t   [  
+	]
+
+
+	
+
+	data018 =
+	[
+		{ tag="frm", name="epic", wait=1500 }, // 
+
+		{ tag="prio", val=262 }, // 
+
+		{ tag="startpos", x=0, y=-600 ,z=0 }, //
+		{ tag="startdelay", val=0 }, // 
+	]
+
+
+	
+	
+}

@@ -1,0 +1,272 @@
+
+
+
+local array = {
+
+	panidata = "./bg/portbreeze/bg030.pat", 
+	
+	data001 =
+	[
+		{ tag="frm", name="rocks" },
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=4000, y=1000 ,z=35000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data002 =
+	[
+		{ tag="frm", name="sky2" },
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-5000 ,z=45000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+
+	
+	
+	
+	data030 =
+	[
+		{ tag="frm", name="clouds", wait=8000 },
+		{ tag="frm", name="clouds1", wait=0 },
+
+		{ tag="prio", val=251 }, 
+		{ tag="startpos", x=0, y=-6000 ,z=32000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data031 =
+	[
+		{ tag="frm", name="c2", wait=2000 },
+		{ tag="frm", name="c3", wait=0 },
+
+		{ tag="prio", val=251 }, 
+		{ tag="startpos", x=0, y=-4000 ,z=26000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data020 =
+	[
+		{ tag="frm", name="s" },
+
+		{ tag="prio", val=252 }, 
+		{ tag="startpos", x=0, y=800 ,z=18000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	data019 =
+	[
+		{ tag="frm", name="s" },
+
+		{ tag="prio", val=252 }, 
+		{ tag="startpos", x=-3000, y=400 ,z=17500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data018 =
+	[
+		{ tag="frm", name="s1" },
+
+		{ tag="prio", val=252 }, 
+		{ tag="startpos", x=-1000, y=500 ,z=17000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data017 =
+	[
+		{ tag="frm", name="s2" },
+
+		{ tag="prio", val=252 }, 
+		{ tag="startpos", x=-6000, y=-100 ,z=19000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data036 =
+	[
+		{ tag="frm", name="3d" },
+
+		{ tag="prio", val=263 }, 
+		{ tag="startpos", x=-4000, y=0 ,z=10000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data037 =
+	[
+		{ tag="frm", name="3d1" },
+
+		{ tag="prio", val=262 }, 
+		{ tag="startpos", x=-4000, y=0 ,z=12000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data039 =
+	[
+		{ tag="frm", name="3d3" },
+
+		{ tag="prio", val=264 }, 
+		{ tag="startpos", x=-4500, y=-2000 ,z=8000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	data038 =
+	[
+		{ tag="frm", name="3d2" },
+
+		{ tag="prio", val=264 }, 
+		{ tag="startpos", x=-6400, y=-2000 ,z=7000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data035 =
+	[
+		{ tag="frm", name="gradient1" },
+
+		{ tag="prio", val=264 }, 
+		{ tag="startpos", x=0, y=1000 ,z=7000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data033 =
+	[
+		{ tag="frm", name="fog", wait=2000 },
+		{ tag="frm", name="fog1", wait=0 },
+
+		{ tag="prio", val=264 }, 
+		{ tag="startpos", x=0, y=0 ,z=5000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data087 =
+	[
+		{ tag="frm", name="gr3",  wait=40 },
+		{ tag="frm", name="gr2",  wait=30 },
+		{ tag="frm", name="gr1",  wait=25 },
+
+		{ tag="prio", val=269 }, 
+		{ tag="startpos", x=-1000, y=-85 ,z=450 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data089 =
+	[
+		{ tag="frm", name="r2" },
+
+		{ tag="prio", val=269 }, 
+		{ tag="startpos", x=-1800, y=-120 ,z=500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data091 =
+	[
+		{ tag="frm", name="underlay", },
+
+
+		{ tag="prio", val=269 }, 
+		{ tag="startpos", x=0, y=-40 ,z=500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data086 =
+	[
+		{ tag="frm", name="rock1" },
+
+		{ tag="prio", val=269 }, 
+		{ tag="startpos", x=-1400, y=-50 ,z=100 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data088 =
+	[
+		{ tag="frm", name="shadow" },
+
+		{ tag="prio", val=269 }, 
+		{ tag="startpos", x=0, y=0 ,z=0 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	data090 =
+	[
+		{ tag="frm", name="grass1" },
+
+		{ tag="prio", val=269 }, 
+		{ tag="startpos", x=0, y=0 ,z=0 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data092 =
+	[
+		{ tag="frm", name="r1" },
+
+		{ tag="prio", val=269 }, 
+		{ tag="startpos", x=-1800, y=-120 ,z=500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data093 =
+	[
+		{ tag="frm", name="3d3" },
+
+		{ tag="prio", val=267 }, 
+		{ tag="startpos", x=-3200, y=1300 ,z=4000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	
+	
+	data050 =
+	[
+		{ tag="frm", name="gr1",  wait=30 },
+		{ tag="frm", name="gr2",  wait=30 },
+		{ tag="frm", name="gr3",  wait=30 },
+
+		{ tag="prio", val=400 }, 
+		{ tag="startpos", x=0, y=20 ,z=100 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data049 =
+	[
+		{ tag="frm", name="gr1",  wait=30 },
+		{ tag="frm", name="gr2",  wait=30 },
+		{ tag="frm", name="gr3",  wait=30 },
+
+		{ tag="prio", val=400 }, 
+		{ tag="startpos", x=-2000, y=20 ,z=-300 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data048 =
+	[
+		{ tag="frm", name="gr1",  wait=30 },
+		{ tag="frm", name="gr2",  wait=30 },
+		{ tag="frm", name="gr3",  wait=30 },
+
+		{ tag="prio", val=400 }, 
+		{ tag="startpos", x=2000, y=20 ,z=-300 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data094 =
+	[
+		{ tag="frm", name="gr1",  wait=30 },
+		{ tag="frm", name="gr2",  wait=30 },
+		{ tag="frm", name="gr3",  wait=30 },
+
+		{ tag="prio", val=268 }, 
+		{ tag="startpos", x=0, y=-100 ,z=600 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+
+	
+
+}
+
+
+
+
+BgObject <- array;
+
+
+
+
+

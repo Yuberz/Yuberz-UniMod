@@ -1,0 +1,161 @@
+
+BgObject <-
+{
+	panidata = "./bg/bg03/bg03.pat", 
+
+	data080 =
+	[
+		{ tag="frm", name="gradB", wait=1500 },
+
+		{ tag="prio", val=402 },
+
+		{ tag="startpos", x=0, y=-120 ,z=0 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+
+	//蛍↓（キャラより手前）
+
+	data070 =
+	[
+		{ tag="frm", name="hotaru00", wait=150 },
+		{ tag="frm", name="hotaru01", wait=150 }, 
+		{ tag="frm", name="hotaru02", wait=150 }, 
+		{ tag="frm", name="hotaru03", wait=150 }, 
+		{ tag="frm", name="hotaru04", wait=150 }, 
+
+		{ tag="prio", val=402 }, 
+
+		{ tag="startpos", x=0, y=-100 ,z=0 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	//蛍↓（キャラより奥）
+
+	data071 =
+	[
+		{ tag="frm", name="hotaru00", wait=170 }, 
+		{ tag="frm", name="hotaru01", wait=170 },  
+		{ tag="frm", name="hotaru02", wait=170 },  
+		{ tag="frm", name="hotaru03", wait=170 },
+		{ tag="frm", name="hotaru04", wait=170 },  
+
+		{ tag="prio", val=271 }, 
+
+		{ tag="startpos", x=500, y=-80 ,z=1500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	data072 =
+	[
+		{ tag="frm", name="hotaru00", wait=190 }, // 
+		{ tag="frm", name="hotaru01", wait=190 }, // 
+		{ tag="frm", name="hotaru02", wait=190 }, // 
+		{ tag="frm", name="hotaru03", wait=190 }, // 
+		{ tag="frm", name="hotaru04", wait=190 }, // 
+
+		{ tag="prio", val=271 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-700, y=-60 ,z=3000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data073 =
+	[
+		{ tag="frm", name="hotaru00", wait=220 }, // 
+		{ tag="frm", name="hotaru01", wait=220 }, // 
+		{ tag="frm", name="hotaru02", wait=220 }, // 
+		{ tag="frm", name="hotaru03", wait=220 }, // 
+		{ tag="frm", name="hotaru04", wait=220 }, // 
+
+		{ tag="prio", val=271 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=1500, y=-40 ,z=4500 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data074 =
+	[
+		{ tag="frm", name="hotaru00", wait=220 }, // 
+		{ tag="frm", name="hotaru01", wait=220 }, // 
+		{ tag="frm", name="hotaru02", wait=220 }, // 
+		{ tag="frm", name="hotaru03", wait=220 }, // 
+		{ tag="frm", name="hotaru04", wait=220 }, // 
+
+		{ tag="prio", val=271 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-1500, y=-20 ,z=4500 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+
+
+	//草の光↓
+
+	data090 =
+	[
+		{ tag="frm", name="grad00", wait=150 }, // 
+		{ tag="frm", name="grad01", wait=150 }, // 
+		{ tag="frm", name="grad02", wait=150 }, // 
+
+		{ tag="prio", val=402 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=0, y=-100 ,z=0 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data091 =
+	[
+		{ tag="frm", name="grad01", wait=150 }, // 
+		{ tag="frm", name="grad02", wait=150 }, // 
+		{ tag="frm", name="grad00", wait=150 }, // 
+
+		{ tag="prio", val=270 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=300, y=0 ,z=2000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data092 =
+	[
+		{ tag="frm", name="grad02", wait=150 }, // 
+		{ tag="frm", name="grad00", wait=150 }, // 
+		{ tag="frm", name="grad01", wait=150 }, // 
+
+		{ tag="prio", val=269 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-300, y=0 ,z=4000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	//草の光（画面奥）↓
+
+	data093 =
+	[
+		{ tag="frm", name="grad00b", wait=150 }, // 
+		{ tag="frm", name="grad01b", wait=150 }, // 
+		{ tag="frm", name="grad02b", wait=150 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=0, y=200 ,z=9600 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+
+/*
+	//反射防止↓
+
+	data000 =
+	[
+		{ tag="frm", name="ita", wait=400 }, // 
+
+		{ tag="prio", val=200 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=0, y=150 ,z=0 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+*/
+	
+}

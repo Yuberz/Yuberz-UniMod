@@ -1,0 +1,123 @@
+
+BgObject <-
+{
+	panidata = "./bg/bg05/spotlight.pat", 
+
+	
+	
+
+	data018 =
+	[
+		{ tag="frm", name="light", wait=3200 }, // 
+
+
+		{ tag="prio", val=20 }, // 
+
+		{ tag="startpos", x=0, y=-400,z=-1000 }, //
+	]
+
+	data019 =
+	[
+		{ tag="frm", name="light", wait=3200 }, // 
+
+
+		{ tag="prio", val=20 }, // 
+
+		{ tag="startpos", x=0, y=-400,z=-700 }, //
+	]
+
+	data020 =
+	[
+		{ tag="frm", name="light2", wait=3200 }, // 
+
+
+		{ tag="prio", val=21 }, // 
+
+		{ tag="startpos", x=0, y=-300,z=500 }, //
+	]
+
+	data030 =
+	[
+		{ tag="frm", name="light2", wait=3200 }, // 
+
+
+		{ tag="prio", val=21 }, // 
+
+		{ tag="startpos", x=-1000, y=-300,z=200 }, //
+	]
+
+	data031 =
+	[
+		{ tag="frm", name="light2", wait=3200 }, // 
+
+
+		{ tag="prio", val=21 }, // 
+
+		{ tag="startpos", x=1500, y=-300,z=50 }, //
+	]
+
+	data050 =
+	[
+		{ tag="frm", name="white2", wait=3200 }, // 
+
+
+		{ tag="prio", val=40 }, // 
+
+		{ tag="startpos", x=0, y=-300,z=600 }, //
+	]
+
+	data053 =
+	[
+		{ tag="frm", name="white2", wait=3200 }, // 
+
+
+		{ tag="prio", val=40 }, // 
+
+		{ tag="startpos", x=0, y=-300,z=-500 }, //
+	]
+
+	data054 =
+	[
+		{ tag="frm", name="white2", wait=3200 }, // 
+
+
+		{ tag="prio", val=40 }, // 
+
+		{ tag="startpos", x=-2000, y=-300,z=100 }, //
+	]
+	
+	data021 =
+	[
+		{ tag="frm", name="blue", wait=3200 }, // 
+
+
+		{ tag="prio", val=30 }, // 
+
+		{ tag="startpos", x=-300, y=-645,z=1700 }, //
+	]
+	
+	data022 =
+	[
+		{ tag="frm", name="blue", wait=3200 }, // 
+
+
+		{ tag="prio", val=32 }, // 
+
+		{ tag="startpos", x=1000, y=-645,z=1000 }, //
+	]
+	
+	data030 =
+	[
+		{ tag="frm", name="fog1", wait=100 }, // 
+		{ tag="frm", name="fog2", wait=100 },
+
+		{ tag="prio", val=30 }, // 
+
+		{ tag="startpos", x=-2500, y=0,z=0 }, //
+	]
+	
+
+
+	
+	
+}

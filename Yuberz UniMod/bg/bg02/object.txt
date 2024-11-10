@@ -1,0 +1,223 @@
+
+BgObject <-
+{
+	panidata = "./bg/bg02/gyakko.pat", 
+
+	
+
+	data007 =
+	[
+		{ tag="frm", name="kiri1", wait=400 }, // 
+		{ tag="frm", name="kiri2", wait=400 }, // 
+		{ tag="frm", name="kiri3", wait=400 }, // 
+
+		{ tag="prio", val=310 }, 
+
+		{ tag="startpos", x=-1000, y=-400 ,z=3000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	data008 =
+	[
+		{ tag="frm", name="kiri3", wait=400 }, // 
+		{ tag="frm", name="kiri1", wait=400 }, // 
+		{ tag="frm", name="kiri2", wait=400 }, // 
+
+		{ tag="prio", val=310 }, // ƒvƒ�ƒCƒIƒŠƒeƒB ‰ŁE Žè‘O700‚­‚ç‚¢
+
+		{ tag="startpos", x=1000, y=-400 ,z=3000 }, // 
+		{ tag="startdelay", val=0 }, // ŠJŽnŽž‚Ì�Ò�¿ƒtƒŒ[ƒ€
+	]
+
+	data009 =
+	[
+		{ tag="frm", name="kiri1", wait=400 }, // 
+		{ tag="frm", name="kiri2", wait=400 }, // 
+		{ tag="frm", name="kiri3", wait=400 }, // 
+
+		{ tag="prio", val=310 }, // ƒvƒ�ƒCƒIƒŠƒeƒB ‰ŁE Žè‘O700‚­‚ç‚¢
+
+		{ tag="startpos", x=1000, y=-500 ,z=6000 }, // 
+		{ tag="startdelay", val=0 }, // ŠJŽnŽž‚Ì�Ò�¿ƒtƒŒ[ƒ€
+	]
+
+	data010 =
+	[
+		{ tag="frm", name="kiri3", wait=400 }, // 
+		{ tag="frm", name="kiri1", wait=400 }, // 
+		{ tag="frm", name="kiri2", wait=400 }, // 
+
+		{ tag="prio", val=310 }, // ƒvƒ�ƒCƒIƒŠƒeƒB ‰ŁE Žè‘O700‚­‚ç‚¢
+
+		{ tag="startpos", x=0, y=-500 ,z=3000 }, // 
+		{ tag="startdelay", val=0 }, // ŠJŽnŽž‚Ì�Ò�¿ƒtƒŒ[ƒ€
+	]
+
+	data011 =
+	[
+		{ tag="frm", name="kiri2", wait=400 }, // 
+		{ tag="frm", name="kiri3", wait=400 }, // 
+		{ tag="frm", name="kiri1", wait=400 }, // 
+
+		{ tag="prio", val=310 }, // ƒvƒ�ƒCƒIƒŠƒeƒB ‰ŁE Žè‘O700‚­‚ç‚¢
+
+		{ tag="startpos", x=500, y=-700 ,z=4000 }, // 
+		{ tag="startdelay", val=0 }, // ŠJŽnŽž‚Ì�Ò�¿ƒtƒŒ[ƒ€
+	]
+
+
+	data011 =
+	[
+		{ tag="frm", name="kiri1", wait=400 }, // 
+		{ tag="frm", name="kiri2", wait=400 }, // 
+		{ tag="frm", name="kiri3", wait=400 }, // 
+
+		{ tag="prio", val=310 }, // ƒvƒ�ƒCƒIƒŠƒeƒB ‰ŁE Žè‘O700‚­‚ç‚¢
+
+		{ tag="startpos", x=2000, y=-500 ,z=4000 }, // 
+		{ tag="startdelay", val=0 }, // ŠJŽnŽž‚Ì�Ò�¿ƒtƒŒ[ƒ€
+	]
+
+	data012 =
+	[
+		{ tag="frm", name="kiri3", wait=400 }, // 
+		{ tag="frm", name="kiri1", wait=400 }, // 
+		{ tag="frm", name="kiri2", wait=400 }, // 
+
+		{ tag="prio", val=310 }, // ƒvƒ�ƒCƒIƒŠƒeƒB ‰ŁE Žè‘O700‚­‚ç‚¢
+
+		{ tag="startpos", x=400, y=-1000 ,z=5000 }, // 
+		{ tag="startdelay", val=0 }, // ŠJŽnŽž‚Ì�Ò�¿ƒtƒŒ[ƒ€
+	]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	data060 =
+	[
+		{ tag="frm", name="shard1", wait=0 }, // 
+		{ tag="frm", name="shard3", wait=1000 }, // 
+		{ tag="frm", name="shard", wait=1000 }, // 
+
+
+		{ tag="prio", val=500 }, 
+
+		{ tag="startpos", x=-1000, y=0 ,z=-500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	
+	data061 =
+	[
+		{ tag="frm", name="shard1", wait=60 }, // 
+		{ tag="frm", name="shard3", wait=1000 }, // 
+		{ tag="frm", name="shard", wait=1000 }, // 
+
+
+		{ tag="prio", val=500 }, 
+
+		{ tag="startpos", x=-100, y=0 ,z=-300 }, 
+		{ tag="startdelay", val=460 }, 
+	]
+	
+	data062 =
+	[
+		{ tag="frm", name="shard1", wait=0 }, // 
+		{ tag="frm", name="shard3", wait=1000 }, // 
+		{ tag="frm", name="shard", wait=1000 }, // 
+
+
+		{ tag="prio", val=500 }, 
+
+		{ tag="startpos", x=-2000, y=0 ,z=-600 }, 
+		{ tag="startdelay", val=1 }, 
+	]
+	
+	
+	data063 =
+	[
+		{ tag="frm", name="shard1", wait=20 }, // 
+		{ tag="frm", name="shard3", wait=1000 }, // 
+		{ tag="frm", name="shard", wait=1000 }, // 
+
+
+		{ tag="prio", val=250 }, 
+
+		{ tag="startpos", x=-1000, y=-500 ,z=1000 }, 
+		{ tag="startdelay", val=40 }, 
+	]
+	
+	data063 =
+	[
+		{ tag="frm", name="shard1", wait=20 }, // 
+		{ tag="frm", name="shard3", wait=1000 }, // 
+		{ tag="frm", name="shard", wait=1000 }, // 
+
+
+		{ tag="prio", val=250 }, 
+
+		{ tag="startpos", x=-1000, y=-500 ,z=1800 }, 
+		{ tag="startdelay", val=540 }, 
+	]
+	
+	data064 =
+	[
+		{ tag="frm", name="shard1", wait=0 }, // 
+		{ tag="frm", name="shard3", wait=450 }, // 
+		{ tag="frm", name="shard", wait=1000 }, // 
+
+
+		{ tag="prio", val=250 }, 
+
+		{ tag="startpos", x=1520, y=-500 ,z=5000 }, 
+		{ tag="startdelay", val=89 }, 
+	]
+	
+	data065 =
+	[
+		{ tag="frm", name="shard1", wait=0 }, // 
+		{ tag="frm", name="shard3", wait=450 }, // 
+		{ tag="frm", name="shard", wait=1000 }, // 
+
+
+		{ tag="prio", val=250 }, 
+
+		{ tag="startpos", x=1520, y=-500 ,z=3000 }, 
+		{ tag="startdelay", val=500 }, 
+	]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

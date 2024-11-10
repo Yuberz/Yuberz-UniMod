@@ -1,0 +1,23 @@
+
+BgObject <-
+{
+	panidata = "./bg/bg02/bg02.pat", 
+
+
+
+
+	data070 =
+	[
+		{ tag="frm", name="linne", wait=10 },
+		{ tag="frm", name="linne2", wait=10 }, 
+		{ tag="frm", name="linne3", wait=10 },
+
+
+		{ tag="prio", val=0 }, 
+
+		{ tag="startpos", x=-1850, y=-150 ,z=500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	
+}

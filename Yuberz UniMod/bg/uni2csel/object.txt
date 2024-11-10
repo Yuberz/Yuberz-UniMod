@@ -1,0 +1,183 @@
+
+
+
+local array = {
+
+	panidata = "./bg/uni2csel/csel00.pat", 
+	
+	
+
+	
+	data050 =
+	[
+		{ tag="frm", name="csel_dust101", wait=100 },
+		{ tag="frm", name="csel_dust102", wait=100 },
+		{ tag="frm", name="csel_dust103", wait=100 },
+		{ tag="frm", name="csel_dust104", wait=100 },
+		{ tag="frm", name="csel_dust105", wait=100 },
+		{ tag="frm", name="csel_dust106", wait=100 },
+		{ tag="frm", name="csel_dust107", wait=100 },
+		{ tag="frm", name="csel_dust108", wait=100 },
+		{ tag="frm", name="csel_dust109", wait=100 },
+
+
+		{ tag="prio", val=251 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+	
+	
+	data051 =
+	[
+		{ tag="frm", name="csel_bgef015",  },
+
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+		
+	data052 =
+	[
+		{ tag="frm", name="csel_building010" },
+
+
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+	
+	data053 =
+	[
+		{ tag="frm", name="csel_bg000", wait=50 },
+		{ tag="frm", name="csel_bg100", wait=50 },
+		{ tag="frm", name="csel_bg101", wait=50 },
+		{ tag="frm", name="csel_bg102", wait=50 },
+		{ tag="frm", name="csel_bg103", wait=50 },
+		{ tag="frm", name="csel_bg104", wait=50 },
+		{ tag="frm", name="csel_bg105", wait=50 },
+		{ tag="frm", name="csel_bg106", wait=50 },
+		{ tag="frm", name="csel_bg107", wait=50 },
+		{ tag="frm", name="csel_bg108", wait=50 },
+		{ tag="frm", name="csel_bg109", wait=50 },
+		{ tag="frm", name="csel_bg110", wait=50 },
+		{ tag="frm", name="csel_bg111", wait=50 },
+
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+	
+	data040 =
+	[
+		{ tag="frm", name="time_parts004" },
+
+
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+	
+	data039 =
+	[
+		{ tag="frm", name="TM_99" },
+
+
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+	
+	data038 =
+	[
+		{ tag="frm", name="csel_nameline_1p005" },
+
+
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+	
+	data037 =
+	[
+		{ tag="frm", name="csel_nameline_2p005" },
+
+
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+
+	data020 =
+	[
+		{ tag="frm", name="grid", },
+
+
+		{ tag="prio", val=500 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+	
+	data034 =
+	[
+		{ tag="frm", name="cursor_0_1p_000", wait=25 },
+		{ tag="frm", name="cursor_0_1p_001", wait=25 },
+
+
+		{ tag="prio", val=501 },
+		{ tag="startpos", x=-50, y=-154 ,z=0 }, 
+	]
+	
+	data035 =
+	[
+		{ tag="frm", name="cursor_0_2p_000", wait=25 },
+		{ tag="frm", name="cursor_0_2p_001", wait=25 },
+
+
+		{ tag="prio", val=501 },
+		{ tag="startpos", x=50, y=-154 ,z=0 }, 
+	]
+	
+	data028 =
+	[
+		{ tag="frm", name="name_chr0001p003" },
+
+
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+	
+	data027 =
+	[
+		{ tag="frm", name="name_chr0012p003" },
+
+
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+	
+	data014 =
+	[
+		{ tag="frm", name="1p_color_win010", wait=5 },
+		{ tag="frm", name="1p_color_win011", wait=5 },
+		{ tag="frm", name="1p_color_win012", wait=5 },
+		{ tag="frm", name="1p_color_win013", wait=5 },
+
+
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+	
+	data015 =
+	[
+		{ tag="frm", name="2p_color_win010", wait=5 },
+		{ tag="frm", name="2p_color_win011", wait=5 },
+		{ tag="frm", name="2p_color_win012", wait=5 },
+		{ tag="frm", name="2p_color_win013", wait=5 },
+
+
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-280 ,z=0 }, 
+	]
+
+}
+
+
+
+
+BgObject <- array;
+
+
+
+
+

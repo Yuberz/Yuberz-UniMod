@@ -1,0 +1,185 @@
+
+
+
+local array = {
+
+	panidata = "./bg/blazbluealtar/altar.pat", 
+	
+	data001 =
+	[
+		{ tag="frm", name="tower" },
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-0 ,z=14500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data002 =
+	[
+		{ tag="frm", name="tower1" },
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=-500, y=-0 ,z=15500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data003 =
+	[
+		{ tag="frm", name="tower2" },
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=500, y=-0 ,z=15500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data004 =
+	[
+		{ tag="frm", name="kiri", wait=150 },
+		{ tag="frm", name="kiri2", wait=0 },
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=600, y=-1200 ,z=30000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data005 =
+	[
+		{ tag="frm", name="kiri", wait=202 },
+		{ tag="frm", name="kiri2", wait=0 },
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=600, y=-1200 ,z=20000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data006 =
+	[
+		{ tag="frm", name="kiri", wait=120 },
+		{ tag="frm", name="kiri2", wait=0 },
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=600, y=-1200 ,z=25000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data035 =
+	[
+		{ tag="frm", name="clouds", wait=12000 },
+		{ tag="frm", name="clouds2", wait=12000 },
+		{ tag="frm", name="clouds3", wait=12000 },
+		{ tag="frm", name="clouds4", wait=0 },
+		
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-18000, z=40000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data034 =
+	[
+		{ tag="frm", name="y1", wait=5300 },
+		{ tag="frm", name="y2", wait=5300 },
+		{ tag="frm", name="y3", wait=5300 },
+		{ tag="frm", name="y4", wait=0 },
+		
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-12000, z=38000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data033 =
+	[
+		{ tag="frm", name="test", wait=5200},
+		{ tag="frm", name="t2", wait=5200},
+		{ tag="frm", name="t3", wait=5200},
+		{ tag="frm", name="t4", wait=0},
+
+		
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-28000, z=35000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data043 =
+	[
+		{ tag="frm", name="red1"},
+
+		
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=-3000, y=-2400, z=45000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data044 =
+	[
+		{ tag="frm", name="red2"},
+
+		
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=3000, y=-2400, z=45000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	
+	
+	data055 =
+	[
+		{ tag="frm", name="heaven" },
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-6000, z=70000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data059 =
+	[
+		{ tag="frm", name="t3", wait=8800},
+		{ tag="frm", name="t4", wait=8800},
+		{ tag="frm", name="test", wait=8800},
+		{ tag="frm", name="t2", wait=0},
+
+		
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-35000, z=70000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data060 =
+	[
+		{ tag="frm", name="clouds2", wait=16000 },
+		{ tag="frm", name="clouds3", wait=16000 },
+		{ tag="frm", name="clouds4", wait=16000 },
+		{ tag="frm", name="clouds", wait=0 },
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-25000, z=70000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data058 =
+	[
+		{ tag="frm", name="y2", wait=4300 },
+		{ tag="frm", name="y3", wait=4300 },
+		{ tag="frm", name="y4", wait=4300 },
+		{ tag="frm", name="y1", wait=0 },
+		
+		{ tag="prio", val=250 },
+		{ tag="startpos", x=0, y=-16000, z=60000 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	data070 =
+	[
+		{ tag="frm", name="para1", wait=100 },
+		{ tag="frm", name="para2", wait=100 },
+		{ tag="frm", name="para3", wait=100 },
+		{ tag="frm", name="para4", wait=100 },
+		{ tag="prio", val=251 },
+		{ tag="startpos", x=0, y=-200 ,z=15500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+	
+	
+
+}
+
+
+
+
+BgObject <- array;
+
+
+
+
+

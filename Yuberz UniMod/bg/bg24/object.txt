@@ -1,0 +1,211 @@
+
+BgObject <-
+{
+	panidata = "./bg/bg24/bg24.pat", // ややこしくなるので、できるだけ同じフォルダに入れるように
+
+
+	//レンズフレア中央右
+
+	data001 =
+	[
+		{ tag="frm", name="nizi1", wait=50 }, // 
+		{ tag="frm", name="nizi2", wait=50 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=940, y=-1130 ,z=1600 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	//レンズフレア右
+
+	data002 =
+	[
+		{ tag="frm", name="nizi1", wait=50 }, // 
+		{ tag="frm", name="nizi2", wait=50 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=1980, y=-1025 ,z=300 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	//レンズフレア中央左
+
+	data003 =
+	[
+		{ tag="frm", name="nizi1", wait=50 }, // 
+		{ tag="frm", name="nizi2", wait=50 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-400, y=-1235 ,z=2000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	//レンズフレア左
+
+	data004 =
+	[
+		{ tag="frm", name="nizi1", wait=50 }, // 
+		{ tag="frm", name="nizi2", wait=50 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-1625, y=-1080 ,z=800 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+
+	//レンズフレア中央左奥
+
+	data005 =
+	[
+		{ tag="frm", name="nizi1", wait=50 }, // 
+		{ tag="frm", name="nizi2", wait=50 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-1870, y=-1700 ,z=5200 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	//雪手前
+
+	data010 =
+	[
+		{ tag="frm", name="snow01", wait=300 }, // 
+		{ tag="frm", name="snow02", wait=300 }, // 
+		{ tag="frm", name="snow03", wait=300 }, // 
+		{ tag="frm", name="snow04", wait=300 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=0, y=0 ,z=1000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data011 =
+	[
+		{ tag="frm", name="snow01", wait=320 }, // 
+		{ tag="frm", name="snow02", wait=320 }, // 
+		{ tag="frm", name="snow03", wait=320 }, // 
+		{ tag="frm", name="snow04", wait=320 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=1200, y=100 ,z=500 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data012 =
+	[
+		{ tag="frm", name="snow01", wait=325 }, // 
+		{ tag="frm", name="snow02", wait=325 }, // 
+		{ tag="frm", name="snow03", wait=325 }, // 
+		{ tag="frm", name="snow04", wait=325 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=2000, y=-100 ,z=0 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+
+	data013 =
+	[
+		{ tag="frm", name="snow01", wait=330 }, // 
+		{ tag="frm", name="snow02", wait=330 }, // 
+		{ tag="frm", name="snow03", wait=330 }, // 
+		{ tag="frm", name="snow04", wait=330 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-1200, y=100 ,z=500 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data014 =
+	[
+		{ tag="frm", name="snow01", wait=335 }, // 
+		{ tag="frm", name="snow02", wait=335 }, // 
+		{ tag="frm", name="snow03", wait=335 }, // 
+		{ tag="frm", name="snow04", wait=335 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-2000, y=-100 ,z=0 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	//雪中間
+
+	data020 =
+	[
+		{ tag="frm", name="snow01g", wait=250 }, // 
+		{ tag="frm", name="snow02g", wait=250 }, // 
+		{ tag="frm", name="snow03g", wait=250 }, // 
+		{ tag="frm", name="snow04g", wait=250 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=0, y=-600 ,z=2000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data021 =
+	[
+		{ tag="frm", name="snow01g", wait=240 }, // 
+		{ tag="frm", name="snow02g", wait=240 }, // 
+		{ tag="frm", name="snow03g", wait=240 }, // 
+		{ tag="frm", name="snow04g", wait=240 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=1400, y=-700 ,z=2500 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data022 =
+	[
+		{ tag="frm", name="snow01g", wait=245 }, // 
+		{ tag="frm", name="snow02g", wait=245 }, // 
+		{ tag="frm", name="snow03g", wait=245 }, // 
+		{ tag="frm", name="snow04g", wait=245 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=2800, y=-800 ,z=2000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+
+	data023 =
+	[
+		{ tag="frm", name="snow01g", wait=230 }, // 
+		{ tag="frm", name="snow02g", wait=230 }, // 
+		{ tag="frm", name="snow03g", wait=230 }, // 
+		{ tag="frm", name="snow04g", wait=230 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-1400, y=-900 ,z=2500 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data024 =
+	[
+		{ tag="frm", name="snow01g", wait=235 }, // 
+		{ tag="frm", name="snow02g", wait=235 }, // 
+		{ tag="frm", name="snow03g", wait=235 }, // 
+		{ tag="frm", name="snow04g", wait=235 }, // 
+
+		{ tag="prio", val=262 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-2800, y=-1000 ,z=2000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+
+
+}

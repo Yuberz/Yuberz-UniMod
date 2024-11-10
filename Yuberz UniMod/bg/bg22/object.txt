@@ -1,0 +1,124 @@
+
+BgObject <-
+{
+	panidata = "./bg/bg22/kuon.pat", // ややこしくなるので、できるだけ同じフォルダに入れるように
+
+	//粒子手前↓
+
+	data002 =
+	[
+		{ tag="frm", name="ryusi0", wait=400 }, // 
+		{ tag="frm", name="ryusi1", wait=400 }, // 
+		{ tag="frm", name="ryusi2", wait=400 }, // 
+
+		{ tag="prio", val=261 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=0, y=0 ,z=0 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data003 =
+	[
+		{ tag="frm", name="ryusi0", wait=400 }, // 
+		{ tag="frm", name="ryusi1", wait=400 }, // 
+		{ tag="frm", name="ryusi2", wait=400 }, // 
+
+		{ tag="prio", val=261 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=1500, y=0 ,z=100 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data004 =
+	[
+		{ tag="frm", name="ryusi0", wait=400 }, // 
+		{ tag="frm", name="ryusi1", wait=400 }, // 
+		{ tag="frm", name="ryusi2", wait=400 }, // 
+
+		{ tag="prio", val=261 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=3000, y=0 ,z=200 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+
+
+	//粒子中間↓
+
+	data005 =
+	[
+		{ tag="frm", name="ryusi2", wait=400 }, // 
+		{ tag="frm", name="ryusi0", wait=400 }, // 
+		{ tag="frm", name="ryusi1", wait=400 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=0, y=-300 ,z=2700 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data006 =
+	[
+		{ tag="frm", name="ryusi2", wait=400 }, // 
+		{ tag="frm", name="ryusi0", wait=400 }, // 
+		{ tag="frm", name="ryusi1", wait=400 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=1500, y=-400 ,z=2600 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data007 =
+	[
+		{ tag="frm", name="ryusi2", wait=400 }, // 
+		{ tag="frm", name="ryusi0", wait=400 }, // 
+		{ tag="frm", name="ryusi1", wait=400 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=3000, y=-500 ,z=2500 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	//粒子奥↓
+
+	data008 =
+	[
+		{ tag="frm", name="ryusi1", wait=400 }, // 
+		{ tag="frm", name="ryusi2", wait=400 }, // 
+		{ tag="frm", name="ryusi0", wait=400 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=0, y=-600 ,z=5700 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data009 =
+	[
+		{ tag="frm", name="ryusi1", wait=400 }, // 
+		{ tag="frm", name="ryusi2", wait=400 }, // 
+		{ tag="frm", name="ryusi0", wait=400 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=1500, y=-700 ,z=5600 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data010 =
+	[
+		{ tag="frm", name="ryusi1", wait=400 }, // 
+		{ tag="frm", name="ryusi2", wait=400 }, // 
+		{ tag="frm", name="ryusi0", wait=400 }, // 
+
+		{ tag="prio", val=260 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=3000, y=-800 ,z=5500 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+
+
+}

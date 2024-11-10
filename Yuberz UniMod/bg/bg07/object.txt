@@ -1,0 +1,110 @@
+
+BgObject <-
+{
+	panidata = "./bg/bg07/bg07.pat", 
+
+	
+
+
+	//蛍↓（キャラより手前）
+
+	data070 =
+	[
+		{ tag="frm", name="hotaru00", wait=150 },
+		{ tag="frm", name="hotaru01", wait=150 }, 
+		{ tag="frm", name="hotaru02", wait=150 }, 
+		{ tag="frm", name="hotaru03", wait=150 }, 
+		{ tag="frm", name="hotaru04", wait=150 }, 
+
+		{ tag="prio", val=402 }, 
+
+		{ tag="startpos", x=0, y=-100 ,z=0 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	//蛍↓（キャラより奥）
+
+	data071 =
+	[
+		{ tag="frm", name="hotaru00", wait=170 }, 
+		{ tag="frm", name="hotaru01", wait=170 },  
+		{ tag="frm", name="hotaru02", wait=170 },  
+		{ tag="frm", name="hotaru03", wait=170 },
+		{ tag="frm", name="hotaru04", wait=170 },  
+
+		{ tag="prio", val=271 }, 
+
+		{ tag="startpos", x=500, y=-80 ,z=1500 }, 
+		{ tag="startdelay", val=0 }, 
+	]
+
+	data072 =
+	[
+		{ tag="frm", name="hotaru00", wait=190 }, // 
+		{ tag="frm", name="hotaru01", wait=190 }, // 
+		{ tag="frm", name="hotaru02", wait=190 }, // 
+		{ tag="frm", name="hotaru03", wait=190 }, // 
+		{ tag="frm", name="hotaru04", wait=190 }, // 
+
+		{ tag="prio", val=271 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-700, y=-60 ,z=3000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data073 =
+	[
+		{ tag="frm", name="hotaru00", wait=220 }, // 
+		{ tag="frm", name="hotaru01", wait=220 }, // 
+		{ tag="frm", name="hotaru02", wait=220 }, // 
+		{ tag="frm", name="hotaru03", wait=220 }, // 
+		{ tag="frm", name="hotaru04", wait=220 }, // 
+
+		{ tag="prio", val=271 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=1500, y=-40 ,z=4500 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data074 =
+	[
+		{ tag="frm", name="hotaru00", wait=220 }, // 
+		{ tag="frm", name="hotaru01", wait=220 }, // 
+		{ tag="frm", name="hotaru02", wait=220 }, // 
+		{ tag="frm", name="hotaru03", wait=220 }, // 
+		{ tag="frm", name="hotaru04", wait=220 }, // 
+
+		{ tag="prio", val=271 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-1500, y=-20 ,z=4500 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data075 =
+	[
+		{ tag="frm", name="epic", wait=9999 }, // 
+
+
+		{ tag="prio", val=-1 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-1500, y=-20 ,z=4500 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	data076 =
+	[
+		{ tag="frm", name="silly", wait=9999 }, // 
+
+
+		{ tag="prio", val=0 }, // プライオリティ 奥0 手前700くらい
+
+		{ tag="startpos", x=-7800, y=-300 ,z=15000 }, // 
+		{ tag="startdelay", val=0 }, // 開始時の待ちフレーム
+	]
+
+	//草の光↓
+
+
+
+	
+}
