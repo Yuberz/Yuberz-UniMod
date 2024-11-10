@@ -3,7 +3,7 @@ This is a modpack made by myself that has visual and audio mods.
 
 ### Version 4 Changelog:
 - First release on github
-- Made the Character Select stage not appear in random stage
+- Made the Character Select stage not appear in random stage select
 
 ### Version 3 Changelog:
 - Fixed SOME characters' glows. Very few, will be ironed out in the future
