@@ -1276,6 +1276,47 @@ Bg_024 =
 	}
 	
 		/////////////////////////////////////////////////////////
+	Bg_025 =
+	{
+		Name = "オーガステージ", // 全角32文字未満
+		DataFile = "bg025",
+
+		Scale = [ 1.4, 1.4, 1.4 ],
+		Position = [ -0.6, 0.0, -0.5 ],
+		ViewGrid = 0,
+		FOV = 45.0,
+		VanishingPoint = 0.0
+
+		IsFog = 1,
+		FogStart = -3.0, FogEnd = 2000.0,
+		FogColor = [ 0.2, 0.0, 0.0, 1.0 ], // RGBA
+
+		MSAA = 4,
+		StageW = 4096, // 2560,4096
+		
+		IsBloom = 0,
+
+		BGBloomEnable = 1,			// OFF:0 / ON:1
+		BGBloomBlightness = 0.7,	// 0 ～ 2
+		BGBloomPower = 3.00,			// 0.1 ～ 5
+		BGBloomBiassR = 0.6,		// 0 ～ 5
+		BGBloomBiassG = 0.3,		// 0 ～ 5
+		BGBloomBiassB = 1.0,		// 0 ～ 5
+		BGBloomBlurRadius = 0.80,	// 0 ～ 10
+		BGBloomTextureSize = 128,	// 64 / 128 / 256 / 512 / 1024 の内どれか。見た目が許す限り、極力小さな値を選択してください。
+		BGBloomAlpha = 1.0,			// 0 ～ 1
+		BGTinyFXAAEnable = 0,		// OFF:0 / ON:1
+		BGTinyFXAAThreshold = 0.2,	// 0 ～ 1
+		BGTinyFXAALerpT = 0.5,		// 0 ～ 1
+
+		InterpolationType = 1,	// Matrx補間モード設定(0:通常、1:Matrix間を2フレームで補間、2：Matrix間をInterpolationNumで指定したフレーム数で補間)
+		//InterpolationNum  = 2,	// 補間フレーム数(InterpolationTypeが2の時にMatrix間を何フレームで補間するかを指定)
+
+		StageSelTex = 25,
+		DLCFlag=1<<4,
+	}
+
+
 
 
 	/////////////////////////////////////////////////////////

@@ -101,113 +101,118 @@ num = 15
 name = <GR_BGM_btl_chr014> (<GR_CH_Chr014>)
 
 [22]
+num = 26
+name = <GR_BGM_btl_chr025> (<GR_CH_Chr025>)
+DLC = 5
+
+[23]
 num = 30
 name = Beat from "Melty Blood" (MBAACC)
 
-[23]
+[24]
 num = 31
 name = The Theme of Arcueid (MBAACC)
 
-[24]
+[25]
 num = 32
 name = Fearless (MBAACC)
 
-[25]
+[26]
 num = 33
 name = Elegant Summer (MBAACC)
 
-[26]
+[27]
 num = 34
 name = Stray Cat (MBAACC)
 
-[27]
+[28]
 num = 35
 name = Troublesome Visitor (MBAACC)
 
-[28]
+[29]
 num = 36
 name = Lurk... (MBAACC)
 
-[29]
+[30]
 num = 37
 name = Noble Mind (MBAACC)
 
-[30]
+[31]
 num = 38
 name = Fight! Our Mech Hisui! (MBAACC)
 
-[30]
+[32]
 num = 39
 name = Modernism Street (MBAACC)
 
-[31]
+[33]
 num = 42
 name = Severe Person (MBAACC)
 
-[32]
+[34]
 num = 43
 name = Obscure Zone (MBAACC)
 
-[33]
+[35]
 num = 44
 name = Great Cats Village 2005 (MBAACC)
 
-[34]
+[36]
 num = 45
 name = SAKURA-KOI-UTA (MBAACC)
 
-[35]
+[37]
 num = 46
 name = Rhythmical Bustle (MBAACC)
 
-[36]
+[38]
 num = 47
 name = WABI SABI (MBAACC)
 
-[37]
+[39]
 num = 48
-name = Resurrection Beat (Gathering of Old Blood) (MBTL)
+name = Resurrection Beat (Gathering of Old Blood) (MBTL)
 
-[38]
+[40]
 num = 49
 name = Autumn Breeze Melody (The Promised Day) (MBTL)
 
-[39]
+[41]
 num = 51
 name = Blooming (Midday Coincidence) (MBTL)
 
-[40]
+[42]
 num = 59
 name = Summer Sky (MBTL)
 
-[41]
+[43]
 num = 63
 name = Magician's Night EX (MBTL)
 
-[42]
-num = 64
-name = GCV2022 -New Genesis- (Great Cat's Village R) (MBTL)
-
-[43]
-num = 65
-name = Spirit & Technique & Body (MBTL)
-
 [44]
-num = 66
-name = & Victory Ahead (MBTL)
+num = 64
+name = GCV2022 -New Genesis- (Great Cat's Village R) (MBTL)
 
 [45]
+num = 65
+name = Spirit & Technique & Body (MBTL)
+
+[46]
+num = 66
+name = & Victory Ahead (MBTL)
+
+[47]
 num = 67
 name = Access Connect (UNIEL)
 
-[46]
+[48]
 num = 68
 name = Night Walker (Chronicle Version) (UNIST)
 
-[47]
+[49]
 num = 69
 name = Conciliation (BBCF)
 
-[48]
+[50]
 num = 72
 name = Crest of a Violent Wave (Arranged Ver.)(EOV)

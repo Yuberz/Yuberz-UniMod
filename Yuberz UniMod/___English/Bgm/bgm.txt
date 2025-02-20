@@ -101,6 +101,11 @@ File = PHONON // フォノン
 IsLoop = 1
 LoopPos = 01.202
 
+[BGM_026]
+File = btl_chr025 // オーガ
+IsLoop = 1
+LoopPos = 04.434
+
 //シーンＢＧＭ
 [BGM_040]
 File = MAINMENU //メインメニュー

@@ -23,6 +23,7 @@
 022 = <GR_BG_Stage022>
 023 = <GR_BG_Stage023>
 024 = <GR_BG_Stage024>
+025 = <GR_BG_Stage025>
 030 = Port Breeze Archipegalo
 031 = Altar
 032 = The mf character select
